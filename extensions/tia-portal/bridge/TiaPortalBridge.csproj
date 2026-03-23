@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>TiaPortalBridge</RootNamespace>
+    <AssemblyName>TiaPortalBridge</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Siemens TIA Portal Openness V18 — requires TIA Portal installed -->
+    <Reference Include="Siemens.Engineering">
+      <HintPath>C:\Program Files\Siemens\Automation\Portal V18\PublicAPI\V18\Siemens.Engineering.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- FlaUI for Windows UI Automation -->
+    <PackageReference Include="FlaUI.UIA3" Version="4.0.0" />
+
+    <!-- Screenshot support -->
+    <PackageReference Include="System.Drawing.Common" Version="8.0.10" />
+  </ItemGroup>
+
+</Project>

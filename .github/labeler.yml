@@ -301,6 +301,10 @@
   - changed-files:
       - any-glob-to-any-file:
           - "extensions/talk-voice/**"
+"extensions: tia-portal":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "extensions/tia-portal/**"
 "extensions: together":
   - changed-files:
       - any-glob-to-any-file:

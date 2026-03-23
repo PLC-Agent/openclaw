@@ -1,0 +1,15 @@
+{
+  "name": "@openclaw/tia-portal",
+  "version": "2026.3.23",
+  "private": true,
+  "description": "OpenClaw TIA Portal control plugin — hybrid Openness API + UI automation for Siemens TIA Portal V18+",
+  "type": "module",
+  "dependencies": {
+    "@sinclair/typebox": "0.34.48"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

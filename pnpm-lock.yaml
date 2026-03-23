@@ -533,6 +533,12 @@ importers:
         specifier: ^1.41.1
         version: 1.41.1
 
+  extensions/tia-portal:
+    dependencies:
+      '@sinclair/typebox':
+        specifier: 0.34.48
+        version: 0.34.48
+
   extensions/tlon:
     dependencies:
       '@aws-sdk/client-s3':

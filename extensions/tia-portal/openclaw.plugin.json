@@ -1,0 +1,64 @@
+{
+  "id": "tia-portal",
+  "name": "TIA Portal Control",
+  "description": "Control Siemens TIA Portal V18+ for PLC programming via Openness API and UI automation.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "bridgePort": {
+        "type": "number",
+        "default": 19847
+      },
+      "bridgePath": {
+        "type": "string"
+      },
+      "tiaVersion": {
+        "type": "string",
+        "default": "V18"
+      },
+      "autoStartBridge": {
+        "type": "boolean",
+        "default": true
+      },
+      "screenshotQuality": {
+        "type": "number",
+        "default": 80
+      },
+      "operationTimeoutMs": {
+        "type": "number",
+        "default": 60000
+      }
+    }
+  },
+  "uiHints": {
+    "bridgePort": {
+      "label": "Bridge Port",
+      "help": "Localhost port for the .NET bridge sidecar (default: 19847).",
+      "advanced": true
+    },
+    "bridgePath": {
+      "label": "Bridge Executable Path",
+      "help": "Path to TiaPortalBridge.exe. Auto-detected from the extension directory if omitted.",
+      "advanced": true
+    },
+    "tiaVersion": {
+      "label": "TIA Portal Version",
+      "help": "TIA Portal version to connect to (V18 or V19)."
+    },
+    "autoStartBridge": {
+      "label": "Auto-Start Bridge",
+      "help": "Automatically start the .NET bridge sidecar when the plugin loads."
+    },
+    "screenshotQuality": {
+      "label": "Screenshot Quality",
+      "help": "JPEG quality for UI screenshots (1-100).",
+      "advanced": true
+    },
+    "operationTimeoutMs": {
+      "label": "Operation Timeout (ms)",
+      "help": "Timeout for TIA Portal operations in milliseconds.",
+      "advanced": true
+    }
+  }
+}
